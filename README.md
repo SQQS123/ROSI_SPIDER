@@ -9,8 +9,16 @@ git上下了一个爬ROSI的，然后发现好像不好用，我就新写了一�
 
 最后奉劝各位注意身体啊~~~
 
-补：好像直接运行有点问题，不过还是可以解决的
+补充知识，如果没有scrapy.cfg文件可以使用如下方式解决：
 把pics文件夹拉到spider文件夹，然后在spider文件夹执行scrapy runspider rosi_spider.py即可
+
+但是如果我们想要更优雅的解决方式呢？
+我们可以自己写个scrapy.cfg文件，内容不多如下，需要放在ROSI目录旁边：
+[settings]
+default = ROSI.settings
+
+[deploy]
+project = ROSI
 
 如果有什么想探讨的，我的联系方式:
 QQ:749804235
