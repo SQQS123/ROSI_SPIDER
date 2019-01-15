@@ -9,7 +9,7 @@ class RosiSpiderSpider(scrapy.Spider):
     name = 'rosi_spider'
     # 永久域名:www.rosmm.cc
     allowed_domains = ['rosmm8.cc']
-    start_urls = ['http://rosmm8.cc/']
+    start_urls = ['https://rosmm8.cc/']
 
     def parse(self, response):
         img = response.xpath("//p[@id='imgString']")
